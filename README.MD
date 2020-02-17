@@ -16,21 +16,21 @@ then enter command 'git clone https://github.com/underch3/pdf.thumbnails.git'
 **2. in terminal cd into pdf.thumbnails**
 
 **3. Install Composer Dependencies**
-
+```
 With command 'composer install'
-
+```
 **4. Install NPM Dependencies**
-
+```
 With command 'npm install'
-
+```
 **5. Create a copy of your .env file**
-
+```
 With command 'cp .env.example .env'
-
+```
 **6. Generate an app encryption key**
-
+```
 php artisan key:generate
-
+```
 If you check the .env file again, you will see that it now has a long random string of characters
 in the APP_KEY field. We now have a valid app encryption key.
 
@@ -50,9 +50,9 @@ the credentials of the database you just created.
 **9. Migrate the database**
 
 Once your credentials are in the .env file, now you can migrate your database.
-
+```
 php artisan migrate
-
+```
 It’s not a bad idea to check your database to make sure everything migrated the way you expected.
 
 **10. Create following directories.**
